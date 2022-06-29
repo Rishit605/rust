@@ -1,4 +1,4 @@
-use std::io;
+use std::io; // Used for importing libraries
 
 fn main() {
     // Mutating in Rust
