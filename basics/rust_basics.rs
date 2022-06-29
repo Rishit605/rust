@@ -16,3 +16,24 @@ fn main() {
 
     let y = 9;
     println!("y is: {}\n", y);
+    
+    // {"""
+    // Name Shadowing
+    // """}
+
+    println!("This is name Shadfowing or Scoping.");
+
+    let o = 2;
+    println!("o is: {}", o);
+    
+    {
+        let o = 7;
+        println!("o is: {}", o);
+
+        let o = o + 8;
+        println!("o is: {}", o);
+    }
+
+    let o = 6;
+    println!("o is: {}\n", o);
+}
