@@ -1,3 +1,5 @@
+use std::io;
+
 fn main() {
     // Mutating in Rust
     println!("This is Mutaition of a variable.");
@@ -115,4 +117,24 @@ fn main() {
     let z = x / y;
     println!("z -> {} is the division two variables with the same Data Types\n", z);
 
+    // TYPE CASTING AND CONVERSION:
+    
+    let q = 255.0f32; // Default dtype would be f64 but with f32 just behind the value to tell the language to treat this value as f32 dtype.
+    println!("q -> {} is not explicitly defined varible but is changed from f64(default) to f32", q);
+
+    let q = 122_000 as i64;
+    println!("q -> {} is not explicitly defined varible but is changed from f64(default) to f32", q);
+
+    let q = 122_000 as i64;
+    let w = 11_0 as i32;
+
+    let i = q / (w as i64);  
+    println!("i -> {} is not explicitly defined varible and w is cast to a different varible(i32), but is later defined as i64.", i);
+
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("expected to read line");
+    println!("{}", input);
+
+    let int_inp: i64 = input.trim().parse().unwrap();
+    println!("{}", int_inp + 2);
 }
