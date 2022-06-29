@@ -69,4 +69,50 @@ fn main() {
     let r: char = ';'; // Explicitly assinging a variable to any character value being any alphabet or symbol.
 
     println!("r -> {} is a char Data Type\n", r);
+    
+    // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+
+    // COMPOUND DATA TYPES:
+    let t: (i32, bool, char) = (1, true, 's'); // Explicitly assinging a variable to a tuple value whihc includes any integer, alphabet or symbol and boolean value.
+
+    println!("t -> {} is Tuple Data Type", t.1); // "t.0/1/2" we can access the elements of the tuple individually.
+
+    let arr: [i32; 2] = [1, 7]; // Explicitly assinging a variable to a array value which includes any integer, alphabet or symbol and boolean value.
+
+    println!("arr -> {} is a Array Data Type", arr[1]); //Accessing elements in Array
+
+    // USER INPUT:
+    let mut inp = String::new();
+
+    io::stdin().read_line(&mut inp).expect("Failed to read line");
+    println!("{}", inp);
+
+    // ARITHIMETICS:
+
+    // ERRO THRWOING STATMENTS //
+    // let mut x: u8 = 9; // 0 to 255
+    // let mut y: i8 = 21; // -128 to 127
+
+    // let mut z = x + y; // Will throw an error as the language does not know how to add different data type values.
+
+    // let x: f32 = 9; // 0 to 255
+    // let y: i8 = 21; // -128 to 127
+
+    // let z = x + y; // Will throw an error as the language does not know how to add different data type values.
+
+    let x: i8 = 9; 
+    let y: i8 = 21;
+
+    let mut z = x + y; // Will throw an error as the language does not know how to add different data type values.
+    println!("z -> {} is the summation two variables with the same Data Types", z);
+
+    z = x - y;
+    println!("z -> {} is the subtraction two variables with the same Data Types", z);
+
+    let x: f32 = 144.2;
+    let y: f32 = 12.0;
+
+    let z = x / y;
+    println!("z -> {} is the division two variables with the same Data Types\n", z);
+
 }
