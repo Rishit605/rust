@@ -17,4 +17,4 @@ To use this Rust program,
   6. First we need to compile the Rust code, to do that type "rustc <given filename>".
   7. After succesfull compilation , you could also check dor any error via "cargo check" command without actually running the file.
   8. To run the file just type "cargo run" in cmd or you can go into you file directory/target/debug and you will find an .exe file; rust-basic.exe file which is an executable file and can run on different computer with the simalar operatingsystem as the rust file was compiled on.
-  9. And Voilà you successfully ran your first Rust code.
+  9. And Voilà! you've successfully ran your first Rust code.
